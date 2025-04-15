@@ -12,6 +12,7 @@ export default function Home() {
       <div className="flex flex-row border border-solid border-gray-50 gap-2 rounded">
         <div className="flex-1 border border-solid border-green-100 rounded justify-center items-center">
           <p>This is the first line S1</p>
+          <p>The env variable is {process.env.TSC}</p>
         </div>
         <div className="flex-1 border border-solid border-green-100 rounded justify-center items-center">
           <p>This is first line S2</p>

@@ -15,6 +15,9 @@ export default {
       fontSize: {
         "13xl": ["10rem", { lineHeight: "1" }],
       },
+      textColor: {
+        primary: "#003784",
+      },
     },
   },
   plugins: [],

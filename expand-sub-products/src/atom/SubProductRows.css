@@ -1,0 +1,11 @@
+.section {
+  display: flex;
+  gap: 4px;
+  padding: 5px 0 5px 5px;
+}
+
+img {
+  height: 40px;
+  width: 40px;
+  transform: rotate();
+}

@@ -1,11 +1,28 @@
 .section {
   display: flex;
-  gap: 4px;
-  padding: 5px 0 5px 5px;
+  gap: 2px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-img {
+.icon-normal {
   height: 40px;
   width: 40px;
-  transform: rotate();
+  transition-property: transform;
+  transition-duration: 150ms;
+}
+
+.icon-expanded {
+  height: 40px;
+  width: 40px;
+  transition-property: transform;
+  transition-duration: 150ms;
+  transform: rotate(90deg);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

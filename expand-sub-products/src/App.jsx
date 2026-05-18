@@ -4,6 +4,7 @@ import SubProductRows from "@/atom/SubProductRows";
 
 function App() {
   const [mockProductsData, setMockProductsData] = useState([]);
+  const [expandIDs, setExpandIDs] = useState({ 1: true });
 
   useEffect(() => {
     fetch("/mockProductsData.json")
@@ -19,11 +20,13 @@ function App() {
       });
   }, []);
 
-  console.log("mockProductsData", mockProductsData);
-
   return (
     <>
-      <SubProductRows product={mockProductsData} />
+      <SubProductRows
+        product={mockProductsData}
+        expandIDs={expandIDs}
+        setExpandIDs={setExpandIDs}
+      />
     </>
   );
 }

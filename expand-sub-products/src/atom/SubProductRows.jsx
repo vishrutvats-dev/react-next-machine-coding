@@ -15,7 +15,12 @@ function SubProductRows({ product, expandIDs, setExpandIDs }) {
       {product &&
         product?.map((ele) => (
           <div className="container">
-            <div key={ele.id} className="section">
+            <div
+              key={ele.id}
+              className={
+                ele?.product?.length > 0 ? "section" : "section-without-image"
+              }
+            >
               {ele?.product?.length > 0 && (
                 <img
                   src={greaterSymbol}

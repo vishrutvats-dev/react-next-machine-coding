@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 .section {
   display: flex;
   gap: 2px;
@@ -6,23 +11,24 @@
   padding-bottom: 5px;
 }
 
+.section-without-image {
+  display: flex;
+  padding-left: 60px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .icon-normal {
-  height: 40px;
-  width: 40px;
+  height: 24px;
+  width: 24px;
   transition-property: transform;
   transition-duration: 150ms;
 }
 
 .icon-expanded {
-  height: 40px;
-  width: 40px;
+  height: 24px;
+  width: 24px;
   transition-property: transform;
   transition-duration: 150ms;
   transform: rotate(90deg);
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }

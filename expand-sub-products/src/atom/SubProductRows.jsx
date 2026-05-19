@@ -7,10 +7,7 @@ function SubProductRows({ product, expandIDs, setExpandIDs }) {
       ...expandIDs,
       [id]: !expandIDs[id],
     };
-    const filtered = Object.fromEntries(
-      Object.entries(newValue).filter(([key, value]) => value),
-    );
-    setExpandIDs(filtered);
+    setExpandIDs(newValue);
   };
 
   return (

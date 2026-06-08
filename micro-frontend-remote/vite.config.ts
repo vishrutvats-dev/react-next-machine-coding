@@ -1,6 +1,5 @@
 import { defineConfig } from "vite";
-import react, { reactCompilerPreset } from "@vitejs/plugin-react";
-import babel from "@rolldown/plugin-babel";
+import react from "@vitejs/plugin-react";
 import federation from "@originjs/vite-plugin-federation";
 
 // https://vite.dev/config/
@@ -8,7 +7,6 @@ export default defineConfig({
   base: "http://localhost:5001/",
   plugins: [
     react(),
-    babel({ presets: [reactCompilerPreset()] }),
     federation({
       name: "remoteApp",
       filename: "remoteEntry.js",
